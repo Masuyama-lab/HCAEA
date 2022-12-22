@@ -1,8 +1,8 @@
-# CIM-based ART with Age and Edge (CAEA)
+# Hierarchical CIM-based ART with Age and Edge (HCAEA)
 
 (c) 2022 Naoki Masuyama
 
-CAEA is proposed in:
+HCAEA is proposed in:
 
 N. Masuyama, N. Amako, Y. Yamada, Y. Nojima, and H. Ishibuchi, "Adaptive resonance theory-based clustering with a divisive hierarchical structure capable of continual learning," IEEE Access, 2022.
 
