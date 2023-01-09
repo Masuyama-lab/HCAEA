@@ -17,9 +17,6 @@ TF = 0;
 Model = [];
 MaxLevel = net.MaxLevel;
 [Dimension,NumSamples]=size(Samples);
-if ((NumSamples<(Dimension+1)) && (Level>1)) || (Level>MaxLevel)    
-    return;
-end
 
 %fprintf('\nLEVEL=%d\n',Level);
 
@@ -39,7 +36,7 @@ NumNeurons = numel(NeuronsIndex);
 Model.Connections = sparse(Model.edge);
 
 %% PRUNE THE GRAPHS WITH ONLY 2 NEURONS. THIS IS TO SIMPLIFY THE HIERARCHY
-if NumNeurons==2
+if NumNeurons<=2
     Model=[];
     TF = 1;
     return;
